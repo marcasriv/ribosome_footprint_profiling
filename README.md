@@ -57,7 +57,7 @@ wget "$url"GCF_003668045.3_CriGri-PICRH-1.0/GCF_003668045.3_CriGri-PICRH-1.0_gen
 wget "$url"/GCF_003668045.3_CriGri-PICRH-1.0/GCF_003668045.3_CriGri-PICRH-1.0_genomic.gtf.gz \
 -P reference_genome
 
-wget "$url"/GCF_003668045.3_CriGri-PICRH-1.0/GCF_003668045.3_CriGri-PICRH-1.0_feature_table.txt \
+wget "$url"/GCF_003668045.3_CriGri-PICRH-1.0/GCF_003668045.3_CriGri-PICRH-1.0_feature_table.txt.gz \
 -P reference_genome 
 
 wget "$url"/GCF_003668045.3_CriGri-PICRH-1.0/GCF_003668045.3_CriGri-PICRH-1.0_genomic.gff.gz \
@@ -92,7 +92,7 @@ This script preprocesses the raw sequencing data. For all data types the adapter
 For Ribo-seq data contaminating RNA species (rRNA, tRNA and snoRNA) are removed following mapping to individual indexes, 
 remaining reads are filtered based on length with only those within the expected RPF range (28-31nt) retained. Finally the reads from all replicate 
 ```bash
-./scripts/preprocess_reads.sh
+./scripts/preprocess_reads.sh ##? preprocess_data.sh ?
 
 # count the reads removed by filtering as well as the final RPFs
 ./scripts/fastq_read_count.sh
