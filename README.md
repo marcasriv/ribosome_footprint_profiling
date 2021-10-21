@@ -109,7 +109,7 @@ Calculation of the P-site offset and analysis of triplet periodicty for RPFs for
 ### Get the docker image
 We have built a docker image with ORF-RATER and required packages to ensure future compatability
 
-Download the ORF-RATER docker image 
+Download the ORF-RATER docker image ###Error response from daemon: manifest for clarkelab/orfrater:latest not found
 ```bash
 docker pull clarkelab/orfrater
 ```
